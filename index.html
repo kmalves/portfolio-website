@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kate's Personal Page</title>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" media="screen and (min-width:1000px)"  href="css/over1000.css">
+        <link rel="stylesheet" media="screen and (max-width:550px)"  href="css/under550.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="row">
+                <div class="col-xs-2">
+                    <img src="images/logo.png" class="img-logo" alt="Logo image">
+                    <a id="menu">
+                    <div class="menu-icon">
+                        &#9776;
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-10 text-right text-uppercase">
+                    <h1>kate alves</h1>
+                    <h4 class="font-light">web developer</h4>
+                </div> 
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+            </header>
+            <div class="row">
+                <nav id="drawer" class="col-xs-12 nav">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-toggle="modal" data-target="#about"><a href="#">About</a></li>
+                        <li class="nav__item"><a href="#work">Work</a></li>
+                        <li class="nav__item"><a href="https://alveskate.carbonmade.com/" target="blank">Personal projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <main>
+                <div class="row">
+                    <div class="col-xs-12 main">
+                        <img src="images/main.jpg" srcset="images/main.jpg 1064w, images/main-medium.jpg 650w, images/main-small.jpg 360w" sizes="100vw" class="img-responsive" alt="Cozy workspace">
+                        <p class="text-image text-center"><q>What we call chaos is just patterns we haven't recognized. What we call random is just patterns we can't decipher.</q><br>CHUCK PALAHNIUK</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-capitalize">
+                        <h2 class="text-blue" id="work">Featured work</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-xs-6 col-sm-4 small-project">
+                        <img src="images/project1.jpg" class="img-responsive" alt="Project1" data-toggle="modal" data-target="#project1">
+                        <h2 class="text-uppercase">Movie Trailer Website</h2>
+                        <p>
+                        <a href="http://kmalves.github.io/movie_website/" target="blank">View</a><br>
+                        <a href="https://github.com/kmalves/movie_website" target="blank">GitHub</a>
+                        </p>
+                    </div>
+                    <!--TO DO: fill out more projects-->
+                    <div class="col-xs-6 col-sm-4 small-project">
+                        <img src="images/project1.jpg" class="img-responsive" alt="Project2" data-toggle="modal" data-target="#project2">
+                        <h2 class="text-uppercase">next project</h2>
+                        <p>
+                        <a href="#">View</a><br>
+                        <a href="#">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 small-project">
+                        <img src="images/project1.jpg" class="img-responsive" alt="Project3" data-toggle="modal" data-target="#project3">
+                        <h2 class="text-uppercase">next project</h2>
+                        <p>
+                        <a href="#">View</a><br>
+                        <a href="#">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr>
+                        </div>
+                        <div class="col-xs-12 text-center"><!--TO DO: add a GitHub Link after submission-->
+                            <p>View source on <a href="#">GitHub</a>. The main picture came from the Internet search, otherwise this website was designed and coded by me. Thanks for visiting!</p>
+                        </div>
+                    </div>
+                    <!--Using images as icons in this case was faster than downloading additional fonts since there is no glyphs I needed in Lato or UTF-->
+                    <div class="row img-icons">
+                        <div class="col-xs-4">
+                            <a href="https://github.com/kmalves" target="blank"><img src="images/gh.png" class="img-responsive center-block" alt="GitHub"></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="https://www.linkedin.com/in/kate-alves-6002b8109" target="blank"><img src="images/in.png" class="img-responsive center-block" alt="LinkedIn"></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="https://www.freecodecamp.com/kmalves" target="blank"><img src="images/fcc.png" class="img-responsive center-block" alt="FreeCodeCamp"></a>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div><!--End "container-fluid"-->
+        <!-- Modal project1 -->
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="Modal1">Movie Trailer Website</h4>
+                    </div>
+                    <div class="modal-body">
+                        Complete the Movie Trailer Website project consisting of server-side code to store a list of movie titles, along with its respective box art imagery and movie trailer website. The data should be served as a web page allowing visitors to watch the trailers.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal project2 -->
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="Modal2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="Modal2">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal project3 -->
+        <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="Modal3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="Modal3">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal "about" -->
+        <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="ModalAbout" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="ModalAbout">Me :)</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!--TO DO: Change picture-->
+                        <img class="img-responsive" src="images/logo.png">
+                        Hi. I'm Kate. I started my career with a degree in Civil and Industrial Engineering and a job at a construction firm. It was intelligent and demanding, but lacked creativity and a great deal of my time was spent at messy and loud construction sites.<br> The first time I tried coding was for my hobby projects website. One article led to another and, three months later, instead of a simple one page site I originally had in mind I managed to put together a multi-page storefront. The process was amazingly rewarding! It was analytically challenging, technical, yet creative. Since then I've been coding for over two years with <a href="https://www.udacity.com/" target="blank">Udacity</a> online programs and <a href="https://www.freecodecamp.com" target="blank">FreeCodeCamp</a>, and loved every minute of it, as frustrating as it can be at times.<br>
+                        When I'm not working or studying I enjoy spending time with my family, outdoor activities, running, swimming, trying new recipes, making clothes and working on home improvement projects.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="css/bootstrap/js/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+        /*
+         * Open the drawer when the menu icon is clicked.
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.nav');
+
+        menu.addEventListener('click', function(e) {
+          drawer.classList.toggle('open');
+          e.stopPropagation();
+        });
+        main.addEventListener('click', function() {
+          drawer.classList.remove('open');
+        });
+        </script>
+    </body>
+</html>
